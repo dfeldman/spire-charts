@@ -1,0 +1,24 @@
+annotations:
+  category: CertificateAuthority
+apiVersion: v2
+appVersion: "0.12.1"
+description: SPIRE Server
+name: spire-server
+version: 0.1.0
+dependencies:
+  - name: postgresql-ha
+    repository: https://github.com/bitnami/charts/blob/master/bitnami/postgresql-ha/Chart.yaml
+    version: ~7.0.0
+    condition: postgresql-ha.enabled
+maintainers:
+  - name: Daniel Feldman
+    email: dfeldman.mn@gmail.com
+keywords:
+  - spire
+  - spiffe
+  - pki
+  - certificate
+  - spiffeio
+  - spiffe.io
+  - security
+
